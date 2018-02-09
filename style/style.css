@@ -1,0 +1,74 @@
+/* Partial */
+
+/*Font Face*/
+@font-face {
+	font-family: "HelveticaSTD";
+	src:url('../fonts/HelveticaLTStd-Light.otf');
+	src:url('../fonts/HelveticaLTStd-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: "HelveticaBOLD";
+	src:url('../fonts/HelveticaLTStd-Blk.otf');
+	src:url('../fonts/HelveticaLTStd-Blk.otf') format('opentype');
+}
+
+@font-face {
+	font-family: "HelveticaRoman";
+	src:url('../fonts/HelveticaLTStd-Roman.otf');
+	src:url('../fonts/HelveticaLTStd-Roman.otf') format('opentype');
+}
+
+/*
+*
+* B L O C K
+* 
+*/
+
+/* ============BLOCK END============ */
+
+/*
+*
+* E L E M E N T
+* 
+*/
+
+/* ============ELEMENT END============ */
+
+/*
+*
+* M O D I F I E R
+* 
+*/
+
+.header--underline, .section--underline {
+    border-bottom: solid 1px #E8E8E8;
+}
+
+/*Color*/
+.brand--color {
+	color: #CE3131;
+}
+
+/*Typhography*/
+.header--bold, .intro--bold, .project--bold, .card--bold, .row--bold, .footer--bold {
+	font-weight: bold;
+}
+
+.card--italic {
+	font-style: italic;
+}
+
+.p--normal, .row--normal {
+	font-style: normal;
+}
+
+.nav__link--active {
+	color: #999999;
+}
+
+.footer__nav--active {
+	color: #099999;
+}
+
+/* ============MODIFIER END============ */
