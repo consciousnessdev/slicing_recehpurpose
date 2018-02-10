@@ -2,28 +2,26 @@
 
 /*Font Face*/
 @font-face {
-	font-family: "HelveticaSTD";
-	src:url('../fonts/HelveticaLTStd-Light.otf');
-	src:url('../fonts/HelveticaLTStd-Light.otf') format('opentype');
-}
-
-@font-face {
-	font-family: "HelveticaBOLD";
-	src:url('../fonts/HelveticaLTStd-Blk.otf');
-	src:url('../fonts/HelveticaLTStd-Blk.otf') format('opentype');
-}
-
-@font-face {
 	font-family: "HelveticaRoman";
 	src:url('../fonts/HelveticaLTStd-Roman.otf');
 	src:url('../fonts/HelveticaLTStd-Roman.otf') format('opentype');
 }
+
+@font-face {
+	font-family: "HelveticaBOLD";
+	src:url('../fonts/HelveticaLTStd-Bold.otf');
+	src:url('../fonts/HelveticaLTStd-Bold.otf') format('opentype');
+}
+
 
 /*
 *
 * B L O C K
 * 
 */
+body {
+	font-family: HelveticaRoman;
+}
 
 .header {
 
@@ -50,7 +48,7 @@
 */
 
 .header-brand {
-
+		font-size: 14pt;
 	}
 	
 	.header-nav {
@@ -190,23 +188,75 @@
 }
 
 /*Typhography*/
+
+.header--resize {
+	font-size: 22pt;
+}
+
+.card--resize, .row--resize, .footer--resize {
+	font-size: 9pt;
+}
+
 .header--bold, .intro--bold, .project--bold, .card--bold, .row--bold, .footer--bold {
-	font-weight: bold;
+	font-family: HelveticaBOLD;
+}
+
+.button--color {
+	color: #FFFFFF;
 }
 
 .card--italic {
 	font-style: italic;
 }
 
-.p--normal, .row--normal {
+.p--normal {
 	font-style: normal;
 }
 
-.nav__link--active {
+.nav__link--active, .p--color, .card--color, .row--color {
 	color: #999999;
 }
 
+
+.list--format {
+	margin: 0 15px;
+}
+
+.list--format:hover {
+	color: #999999;
+}
+
+.footer--format:hover {
+	color: #099999;
+}
+
+.list--format:after, .footer--format:after {
+	content: '/';
+	color: #999999;
+}
+
+.list--format:last-child::after, .footer--format:last-child::after {
+	content: '';
+}
+
+.link--format {
+	text-decoration: none;
+}
+
+.link--format:visited {
+	color: #000000;
+}
+
+.nav__link--active:visited {
+	color: #999999;	
+}
+
 .footer__nav--active {
+	color: #099999;
+	text-decoration: none;
+}
+
+.footer__nav--active:visited {
 	color: #099999;
 }
 
