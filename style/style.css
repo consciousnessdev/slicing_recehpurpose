@@ -25,6 +25,22 @@
 * 
 */
 
+.header {
+
+	}
+	
+.section {
+
+	}
+	
+.footer {
+
+	}
+
+	.container {
+
+	}
+
 /* ============BLOCK END============ */
 
 /*
@@ -32,6 +48,129 @@
 * E L E M E N T
 * 
 */
+
+.header-brand {
+
+	}
+	
+	.header-nav {
+
+	}
+		.nav-list {
+
+		}
+			.nav-list__item {
+
+			}
+
+.section-intro {
+
+	}
+
+		.intro__header {
+
+		}
+
+		.intro__paragraph {
+
+		}
+
+		.intro__button {
+
+		}
+			.button__top {
+
+			}
+	
+	.section-project {
+
+	}
+
+		.project__header {
+
+		}
+
+		.project__card {
+
+		}
+
+			.card__image {
+
+			}
+
+			.card__title {
+
+			}
+
+			.card__info {
+
+			}
+
+	.section-about {
+
+	}
+
+		.about__el {
+
+		}
+
+			.el__header {
+
+			}
+
+			.el__content {
+
+			}
+
+				.content__p {
+
+				}
+			.el__socmed {
+
+			}
+
+				.socmed__list {
+
+				}
+
+				.list__item {
+
+				}
+
+				.el-content__row {
+
+				}
+
+					.content-row__image {
+
+					}
+
+					.content-row__detail {
+
+					}
+
+						.row__detail {
+
+						}
+
+						.row__specimen {
+
+						}
+
+.footer__brand {
+
+	}
+
+	.footer__nav {
+
+	}
+
+		.footer__list {
+
+		}
+			.footer-nav__item {
+				
+			}
 
 /* ============ELEMENT END============ */
 
@@ -41,7 +180,7 @@
 * 
 */
 
-.header--underline, .section--underline {
+.header--underline, .section--underline, .content--underline {
     border-bottom: solid 1px #E8E8E8;
 }
 
@@ -69,6 +208,10 @@
 
 .footer__nav--active {
 	color: #099999;
+}
+
+.list--borderhover {
+	
 }
 
 /* ============MODIFIER END============ */
