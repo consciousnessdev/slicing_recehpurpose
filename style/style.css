@@ -19,13 +19,19 @@
 * B L O C K
 * 
 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	font-family: HelveticaRoman;
+	font-family: HelveticaRoman, sans-serif;
 }
 
 .header {
-
-	}
+	
+}
 	
 .section {
 
@@ -33,7 +39,7 @@ body {
 	
 .footer {
 
-	}
+}
 
 	.container {
 
@@ -46,128 +52,155 @@ body {
 * E L E M E N T
 * 
 */
-
-.header-brand {
-		font-size: 14pt;
+.header-wrapper {
+	margin: 25px 0;
+}
+	.header-brand {
+		width: 100%;
+		text-align:  center;
+		margin: 10px 0;
 	}
 	
 	.header-nav {
-
+		width: 100%;
+		text-align:  center;
+		margin: 10px 0;
 	}
 		.nav-list {
-
+			margin: 0 auto;
 		}
 			.nav-list__item {
 
 			}
 
 .section-intro {
-
+		margin: 30px 15px 30px 15px;
+		text-align: center;
+		line-height: 2;
 	}
 
 		.intro__header {
-
+			font-size: 14pt;
 		}
 
 		.intro__paragraph {
-
+			font-size: 9pt;
+			margin: 15px 0;
 		}
 
 		.intro__button {
-
 		}
 			.button__top {
-
+				margin: 0 auto;
 			}
 	
 	.section-project {
-
+		margin: 30px 15px 30px 15px;
+		text-align: center;
 	}
 
 		.project__header {
-
+			margin: 20px 0;
 		}
 
 		.project__card {
-
+		    width: 300px;
+		    margin: 20px auto;
 		}
-
+			
 			.card__image {
-
+				width: 100%;
+				height: auto;
 			}
-
+			
 			.card__title {
-
+				margin: 15px 0 10px 0;
 			}
 
 			.card__info {
-
+				margin: 10px 0 15px 0;
 			}
-
-	.section-about {
-
-	}
-
-		.about__el {
-
+	
+	.section-header {
+			
 		}
 
-			.el__header {
+		.section-about {
+			padding: 40px 0;
+		}
 
+
+			.about__el {
+				margin: 0 auto;
+				text-align: center;
 			}
 
-			.el__content {
-
+			.about__el:nth-child(2){
+				margin: 50px auto 0 auto;
 			}
 
-				.content__p {
-
-				}
-			.el__socmed {
-
-			}
-
-				.socmed__list {
-
+				.el__header {
+					
 				}
 
-				.list__item {
-
+				.el__content {
+					margin: 10px 15px;
 				}
 
-				.el-content__row {
+					.content__p {
+						margin: 15px 0;
+						line-height: 1.5;
+					}
+				.el__socmed {
 
 				}
 
-					.content-row__image {
-
+					.socmed__list {
+						
 					}
 
-					.content-row__detail {
-
+					.list__item {
+						display: inline-block;
 					}
 
-						.row__detail {
+					.el-content__row {
+						margin: 10px auto 30px auto;
+					}
+
+						.content-row__image {
 
 						}
 
-						.row__specimen {
-
+						.content-row__detail {
+							margin: 15px auto;
 						}
 
-.footer__brand {
+							.row__detail {
 
+							}
+
+							.row__specimen {
+								margin: 10px auto;
+							}
+
+.footer-wrapper {
+	margin: 25px 0;
+}
+	.footer__brand {
+		width: 100%;
+		text-align: center;
+		margin: 10px 0;
 	}
 
 	.footer__nav {
-
+	width: 100%;
+	text-align: center;
+	margin: 10px 0;
 	}
 
-		.footer__list {
-
-		}
+		.footer__list {margin: 0 auto;}
 			.footer-nav__item {
-				
+				display: inline;
 			}
 
 /* ============ELEMENT END============ */
@@ -197,16 +230,37 @@ body {
 	font-size: 9pt;
 }
 
-.header--bold, .intro--bold, .project--bold, .card--bold, .row--bold, .footer--bold {
+.card--border {
+	border: 1px #CCCCCC solid;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.header--bold, .intro--bold, .button--bold, .project--bold, .card--bold, .row--bold, .footer--bold {
 	font-family: HelveticaBOLD;
+}
+
+.button--flat {
+	line-height: 45px;
+}
+
+.button--wide {
+	width: 120px;
+	height: 40px;
+	border-radius: 5px;
 }
 
 .button--color {
 	color: #FFFFFF;
+	background-color: #000;
 }
 
 .card--italic {
 	font-style: italic;
+}
+
+.section--color {
+	background-color: #E5E5E5;
 }
 
 .p--normal {
@@ -219,7 +273,7 @@ body {
 
 
 .list--format {
-	margin: 0 15px;
+	display: inline;
 }
 
 .list--format:hover {
@@ -231,11 +285,13 @@ body {
 }
 
 .list--format:after, .footer--format:after {
+	margin: auto 10px;
 	content: '/';
 	color: #999999;
 }
 
-.list--format:last-child::after, .footer--format:last-child::after {
+.list--format:last-child::after,
+.footer--format:last-child::after {
 	content: '';
 }
 
@@ -265,3 +321,82 @@ body {
 }
 
 /* ============MODIFIER END============ */
+
+/*
+*
+* M E D I A - Q U E R Y
+* 
+*/
+
+/* ============MEDIA-QUERY END============ */
+
+
+.list--borderhover { /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border:3px solid #000; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+.facebookBtn{
+    background: #E5E5E5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #E5E5E5;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+      
+}
+
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+      border-color: #00ABE3;
+}
+
+
+/* rss button class*/
+.rssBtn{
+    background: #E5E5E5;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;
+      background: #fff;
+      border-color: #e88845;
+}
