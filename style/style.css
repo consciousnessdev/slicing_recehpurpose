@@ -1,4 +1,4 @@
-/* Partial */
+ Partial */
 
 /*Font Face*/
 @font-face {
@@ -316,20 +316,7 @@ body {
 	color: #099999;
 }
 
-.list--borderhover {
-	
-}
-
-/* ============MODIFIER END============ */
-
-/*
-*
-* M E D I A - Q U E R Y
-* 
-*/
-
-/* ============MEDIA-QUERY END============ */
-
+/* Socmed Button */
 
 .list--borderhover { /* global button class */
     display: inline-block;
@@ -400,3 +387,13 @@ body {
       background: #fff;
       border-color: #e88845;
 }
+
+/* ============MODIFIER END============ */
+
+/*
+*
+* M E D I A - Q U E R Y
+* 
+*/
+
+/* ============MEDIA-QUERY END============ 
